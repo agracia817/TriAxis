@@ -1,0 +1,14 @@
+<div class="card">
+  <h2>Drive: {{PATH}}</h2>
+
+  <ul>
+    {{FILES}}
+  </ul>
+
+  <h3>Crear fitxer</h3>
+  <form method="POST" action="/drive/create">
+    <input type="hidden" name="path" value="{{PATH}}">
+    <input type="text" name="name" placeholder="nom.txt">
+    <button type="submit">Crear</button>
+  </form>
+</div>
